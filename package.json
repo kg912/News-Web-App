@@ -2,12 +2,15 @@
   "name": "xing-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://gitname.github.io/react-gh-pages",
   "dependencies": {
     "antd": "^3.4.1",
     "axios": "^0.18.0",
     "bootstrap": "4.1.0",
     "firebase": "^4.12.1",
     "firebase-tools": "^3.18.2",
+    "gh-pages": "^1.1.0",
+    "gh-pages-deploy": "^0.5.0",
     "http": "^0.0.0",
     "moment": "^2.22.0",
     "react": "^16.3.1",
@@ -22,8 +25,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "homepage" : "http://kg912.github.io/react-news"
+    "eject": "react-scripts eject"
   }
 }
